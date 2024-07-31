@@ -9,6 +9,9 @@ export default function Home(){
             <h1 className="text-6xl block block mb-4">and new experience</h1>
             <h4 className="text-xs block block mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</h4>
             </div>
+            <div>
+                <img src="./Public/Images/images.png" alt="not found"></img>
+            </div>
         </div>
     )
 }
