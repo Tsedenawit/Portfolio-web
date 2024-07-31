@@ -4,10 +4,10 @@ export default function Nav(){
     return(
         <div className=" h-[70px] bg-white drop-shadow-md flex justify-center items-center justify-betwwen">
             <ul className="flex space-x-12">
-                <li>Home</li>
-                <li>About me</li>
-                <li>Portfolio</li>
-                <li>Contact me</li>
+                <li> <a href="/">Home</a> </li>
+                <li> <a href="">About me</a> </li>
+                <li> <a href="">Portfolio </a> </li>
+                <li> <a href="">Contact me </a> </li>
             </ul>
         </div>
     )
