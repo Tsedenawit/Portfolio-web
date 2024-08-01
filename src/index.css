@@ -9,22 +9,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  max-width: fit-content;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-ul{
-  list-style: none;
-  justify-content: center;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-li{
-  text-align: center;
-}
+
 #cont{
   background-color: #F5FCFF;
 }
