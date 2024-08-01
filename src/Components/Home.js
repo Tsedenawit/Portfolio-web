@@ -2,9 +2,9 @@ import React from "react";
 import myImage from "../Images/Images.png"
 export default function Home(){
     return (
-        <div id="cont" className="overflow-x-hidden">
-             <div className="flex justify-between items-center max-w-screen overflow-x-hidden lg:px-20 ml-20" >
-            <div className="lg:w-[600px]">
+        <div id="cont" className="max-w-full overflow-x-hidden mx-auto">
+             <div className="flex justify-between items-center w-full overflow-x-hidden mx-auto lg:px-20 ml-20" >
+            <div className="lg:w-[600px] w-full">
             <h4 className="text-xs block">Hey, I am Tsedenawit Lemma</h4>
             <h1 className="text-6xl block block mb-4">I create <span className="text-violet-600 ">Projects</span></h1>
             <h1 className="text-6xl block block mb-4">and new experience</h1>

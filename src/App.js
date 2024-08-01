@@ -4,11 +4,10 @@ import Home from './Components/Home';
 import About from './Components/About';
 function App() {
   return (
-    <div>
-     {/* <Nav/> */}
+    <div className='max-w-full h-auto'>
+     <Nav/>
      <Home/>
-     <br></br>
-     {/* <About/> */}
+     <About/>
     </div>
   );
 }
