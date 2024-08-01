@@ -2,8 +2,8 @@ import React from "react";
 import myImage from "../Images/Images.png"
 export default function Home(){
     return (
-        <div id="cont">
-             <div className="flex justify-between items-center ml-20 mr-20" >
+        <div id="cont" className="">
+             <div className="flex justify-between items-center ml-20 mr-20 lg:ml-20 lg:mr-20 max-w-screen overflow-hidden" >
             <div className="w-[600px]">
             <h4 className="text-xs block">Hey, I am Tsedenawit Lemma</h4>
             <h1 className="text-6xl block block mb-4">I create <span className="text-violet-600 ">Projects</span></h1>

@@ -5,7 +5,7 @@ import About from './Components/About';
 function App() {
   return (
     <div >
-     <Nav/><br></br>
+     <Nav/>
      <Home/>
      <br></br>
      <About/>
