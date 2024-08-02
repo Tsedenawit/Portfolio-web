@@ -3,8 +3,8 @@ import Image from "../Images/about.png"
 export default function About(){
     return(
         <div className="flex justify-between ml-20 mt-[100px]">
-            <div><img src={Image} className="w-[650px]"></img></div>
-            <div className="w-[600px] mt-[250px] mr-[80px]">
+            <div><img src={Image} className="w-[500px]"></img></div>
+            <div className="w-[500px] mt-[200px] mr-[120px]">
                 <h4 className="text-4xl"><b>About Me</b> </h4><br></br>
                 <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus
                     massa sollicitudin amet augue. Nibh metus a semper purus mauris duis. Lorem eu 
