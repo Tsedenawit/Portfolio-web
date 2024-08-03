@@ -30,28 +30,8 @@ export default function Port() {
             src={images1}
             className="max-w-100 max-h-50 min-h-[50px] rounded-md"
           ></img>
-          <h2 className="mt-3 pl-5">
-            <b>Country quiz</b>
-          </h2>
-          <h2 className="mt-2 pl-5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros.
-          </h2>
-          <button className="underline-offset-8 underline mt-4 pl-5">
-            View in Github
-          </button>
-        </div>
-        <div className="max-w-[300px] min-h-[450px] rounded-md mt-20 shadow-lg">
-          <img src={images2} className="max-w-100 max-h-50 rounded-md"></img>
-          <h2 className="mt-3">
-            <b>Country quiz</b>
-          </h2>
-          <h2 className="mt-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            varius enim in eros.
-          </h2>
-          <div>
-            <Button className="underline-offset-8 underline mt-4 pl-5" onClick={handleOpen}>View in Github</Button>
+            <div className="mt-3 pl-3">
+            <Button onClick={handleOpen}>Country quiz</Button>
             <Modal
               open={open}
               onClose={handleClose}
@@ -69,6 +49,42 @@ export default function Port() {
               </Box>
             </Modal>
           </div>
+          <h2 className="mt-2 pl-5">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </h2>
+          <button className="underline-offset-8 underline mt-4 pl-5">
+            View in Github
+          </button>
+        </div>
+        <div className="max-w-[300px] min-h-[450px] rounded-md mt-20 shadow-lg">
+          <img src={images1} className="max-w-100 max-h-50 rounded-md"></img>
+          <div>
+            <Button onClick={handleOpen}>Country quiz</Button>
+            <Modal
+              open={open}
+              onClose={handleClose}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
+            >
+              <Box sx={style}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Text in a modal
+                </Typography>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Duis mollis, est non commodo luctus, nisi erat porttitor
+                  ligula.
+                </Typography>
+              </Box>
+            </Modal>
+          </div>
+          <h2 className="mt-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros.
+          </h2>
+          <button className="underline-offset-8 underline mt-4 pl-5">
+            View in Github
+          </button>
         </div>
         <div className="max-w-[300px] min-h-[450px] rounded-md mt-20 shadow-lg">
           <img src={images1} className="max-w-100 max-h-50 rounded-md"></img>
