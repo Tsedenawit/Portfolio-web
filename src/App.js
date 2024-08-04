@@ -7,16 +7,16 @@ import BasicModal from './Components/Contact';
 function App() {
   return (
     <div className='max-w-full h-auto'>
-     {/* <Nav/>
+     <Nav/>
      <Home/>
-     <About/>*/}
+     <About/>
+     <h2 className="text-6xl ml-20 mt-40">My Portfolio</h2>
      <div className="flex justify-between">
      <Port name="Country Quiz" /> 
      <Port name="Country Quiz" /> 
      <Port name="Country Quiz" /> 
      <Port name="Country Quiz" /> 
      </div>
-     {/* <BasicModal/> */}
     </div>
   );
 }
