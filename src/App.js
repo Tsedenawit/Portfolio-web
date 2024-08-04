@@ -10,7 +10,12 @@ function App() {
      {/* <Nav/>
      <Home/>
      <About/>*/}
-     <Port/> 
+     <div className="flex justify-between">
+     <Port name="Country Quiz" /> 
+     <Port name="Country Quiz" /> 
+     <Port name="Country Quiz" /> 
+     <Port name="Country Quiz" /> 
+     </div>
      {/* <BasicModal/> */}
     </div>
   );
