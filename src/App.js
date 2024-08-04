@@ -3,7 +3,7 @@ import Nav from './Components/Nav';
 import Home from './Components/Home';
 import About from './Components/About';
 import Port from './Components/Port';
-import BasicModal from './Components/Contact';
+import Contact from './Components/Contact';
 function App() {
   return (
     <div className='max-w-full h-auto'>
@@ -17,6 +17,7 @@ function App() {
      <Port name="Country Quiz" /> 
      <Port name="Country Quiz" /> 
      </div>
+     <Contact/>
     </div>
   );
 }
