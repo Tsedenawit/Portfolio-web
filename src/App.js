@@ -7,7 +7,6 @@ import Contact from './Components/Contact';
 import images2 from "../src/Images/Image.png";
 import My from "../src/Images/Image1.png"
 import Myimg from "../src/Images/Image2.png"
-import Mymodal from './Components/Modal';
 function App() {
   const names =[
   {name:"Country quiz", img:images2, lin:"https://github.com/Tsedenawit/Quiz-main"},
@@ -38,7 +37,6 @@ const elements = normalizedNames.map((na, index) => {
      </div>
      </div>
      <Contact/>
-    <Mymodal/>
     </div>
   );
 }
