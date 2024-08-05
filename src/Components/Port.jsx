@@ -21,8 +21,7 @@ export default function Port(props) {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
   return (
-    <div className="mt-[100px] mb-[50px] ">
-       <h2 className="text-6xl ml-20 mt-40">My Portfolio</h2>
+    <div className="mb-[50px] ">
       <div className="flex justify-between mr-20 ml-20">
         <div className="max-w-[300px] min-h-[450px] rounded-md mt-20 shadow-2xl ">
           <img

@@ -14,16 +14,26 @@ function App() {
   {Nam:"Portfolio", imag:Myimg},
 
 ]
-const elements = names.map(na=>{
-  return <Port name={na.name} image={na.img}/>
-})
+const normalizedNames = names.map(na => {
+  return {
+    name: na.name || na.Name || na.Nam,
+    img: na.img || na.imgg || na.imag
+  };
+});
+
+const elements = normalizedNames.map((na, index) => {
+  return <Port key={index} name={na.name} image={na.img} />;
+});
   return (
     <div className='max-w-full h-auto'>
      <Nav/>
      <Home/>
      <About/>
+     <div>
+     <h2 className="text-5xl ml-20 mt-40">My Portfolio</h2>
      <div className="flex justify-between">
      {elements}
+     </div>
      </div>
      <Contact/>
     </div>
