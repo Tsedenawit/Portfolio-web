@@ -7,6 +7,7 @@ import Contact from './Components/Contact';
 import images2 from "../src/Images/Image.png";
 import My from "../src/Images/Image1.png"
 import Myimg from "../src/Images/Image2.png"
+import { Route, Routes } from 'react-router-dom';
 function App() {
   const names =[
   {name:"Country quiz", img:images2, lin:"https://github.com/Tsedenawit/Quiz-main"},
@@ -27,7 +28,7 @@ const elements = normalizedNames.map((na, index) => {
 });
   return (
     <div className='max-w-full h-auto'>
-      <Nav/>
+      {/* <Nav/>
     <Home/>
      <About/>
      <div>
@@ -36,7 +37,14 @@ const elements = normalizedNames.map((na, index) => {
      {elements}
      </div>
      </div>
-     <Contact/>
+     <Contact/> */}
+     <Nav/>
+     <Routes>
+     <Route path='' element={<Home/>}/>
+     <Route path='' element={<About/>}/>
+     <Route path='' element={elements}/>
+     <Route path='' element={<Contact/>}/>
+     </Routes>
     </div>
   );
 }
