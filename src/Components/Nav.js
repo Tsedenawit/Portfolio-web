@@ -1,25 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Home from "./Home";
+import About from "./About";
+import Port from "./Port";
+import Contact from "./Contact";
 
 export default function Nav() {
   return (
     <div className="w-full min-h-[70px] bg-white drop-shadow-md flex justify-center items-center">
       <ul className="flex space-x-10">
-        <li>
-          {" "}
-          <a href="/">Home</a>{" "}
+      <li>
+          <Link to="./home">Home</Link>
         </li>
         <li>
-          {" "}
-          <a href="">About me</a>{" "}
+          <Link to="./About">About Me</Link>
         </li>
         <li>
-          {" "}
-          <a href="">Portfolio </a>{" "}
+          <Link to={Port}>Portfolio</Link>
         </li>
         <li>
-          {" "}
-          <a href="">Contact me </a>{" "}
+          <Link to="/contact">Contact Me</Link>
         </li>
       </ul>
     </div>

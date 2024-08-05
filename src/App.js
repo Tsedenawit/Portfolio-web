@@ -40,10 +40,10 @@ const elements = normalizedNames.map((na, index) => {
      <Contact/> */}
      <Nav/>
      <Routes>
-     <Route path='' element={<Home/>}/>
-     <Route path='' element={<About/>}/>
-     <Route path='' element={elements}/>
-     <Route path='' element={<Contact/>}/>
+     <Route path='/home' element={<Home/>}/>
+     <Route path='/about' element={<About/>}/>
+     <Route path='/port' element={elements}/>
+     <Route path='/contact' element={<Contact/>}/>
      </Routes>
     </div>
   );
