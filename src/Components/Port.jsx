@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import images2 from "../Images/coffee.jpg";
+import images2 from "../Images/Image.png";
 import images1 from "../Images/quiz.png";
 
 const style = {
@@ -26,7 +26,7 @@ export default function Port(props) {
       <div className="flex justify-between mr-20 ml-20">
         <div className="max-w-[300px] min-h-[450px] rounded-md mt-20 shadow-2xl ">
           <img
-            src={images1}
+            src={props.image}
             className="max-w-100 max-h-50 min-h-[50px] rounded-md"
           ></img>
             <div className="mt-3 pl-3">
