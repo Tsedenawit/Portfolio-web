@@ -5,16 +5,18 @@ import About from './Components/About';
 import Port from './Components/Port';
 import Contact from './Components/Contact';
 function App() {
+  const names =[
+  "Country quiz",
+  "Coffee page",
+  "Portfolio"
+
+]
   return (
     <div className='max-w-full h-auto'>
      <Nav/>
      <Home/>
      <About/>
-     <h2 className="text-6xl ml-20 mt-40">My Portfolio</h2>
      <div className="flex justify-between">
-     <Port name="Country Quiz" /> 
-     <Port name="Country Quiz" /> 
-     <Port name="Country Quiz" /> 
      <Port name="Country Quiz" /> 
      </div>
      <Contact/>
