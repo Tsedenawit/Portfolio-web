@@ -2,7 +2,7 @@ import React from "react";
 import myImage from "../Images/images.png"
 export default function Home(){
     return (
-        <div id="cont" className="max-w-full overflow-x-hidden mx-auto">
+        <div id="cont" className="max-w-full overflow-x-hidden mx-auto min-h-[600px]">
              <div className="flex justify-between items-center w-full overflow-x-hidden mx-auto lg:px-20 " >
             <div className="lg:w-[600px] w-full">
             <h4 className="text-xs block">Hey, I am Tsedenawit Lemma</h4>
@@ -13,8 +13,8 @@ export default function Home(){
                 tristique.</h4>
             <button className="text-center bg-violet-600 w-[150px] h-[50px] text-white rounded"> Get in touch</button>
             </div>
-            <div>
-                <img src={myImage} alt="not found" className="w-[600px]"></img>
+            <div className="mt-10">
+                <img src={myImage} alt="not found" className="w-[600px] mt-[40px]"></img>
             </div>
         </div> 
         </div>
