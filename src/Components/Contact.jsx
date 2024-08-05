@@ -6,6 +6,7 @@ export default function Contact(){
     firstname: "",
     lastname:"",
     email: "",
+    Phone:"",
     service:"",
     area:"",
    })
@@ -22,8 +23,8 @@ export default function Contact(){
    }
 
     return(
-        <div className="grid place-items-center">
-            <h2 className="text-center text-2xl">Contact me </h2>
+        <div className="grid place-items-center mt-20">
+            <h2 className="text-center text-5xl">Contact me </h2>
         <div className=" bg-white rounded-xl shadow-lg p-8 text-gray-600 max-w-[600px]  md:w-full">
           <form className="flex flex-col space-y-4">
             <div className="flex justify-between">
@@ -46,7 +47,7 @@ export default function Contact(){
             </div>
             <div className="flex justify-between">
               <div>
-              <label for="names" className="text-sm">First Name</label>
+              <label for="names" className="text-sm">Email</label>
               <input type="text" placeholder="Name" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
               value={data.email}
               id="names"
@@ -54,16 +55,16 @@ export default function Contact(){
               name="email"/>
               </div>
               <div>
-               <label for="names" className="text-sm">Last Name</label>
+               <label for="names" className="text-sm">Phone Number</label>
               <input type="text" placeholder="Name" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
-              value={data.firstname}
+              value={data.Phone}
               id="names"
               onChange={handle}
-              name="fullname"/>
+              name="phone"/>
               </div>
             </div>
             <div>
-              <label for="selected" className="text-sm">Service Required</label><br></br>
+              <label for="selected" className="text-sm">Choose a topic</label><br></br>
               <select id="selected" value={data.service} onChange={handle} 
               name="service" className="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300" >
               <option value="">Select</option>
