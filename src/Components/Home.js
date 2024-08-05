@@ -1,5 +1,5 @@
 import React from "react";
-import myImage from "../Images/Images.png"
+import myImage from "../Images/images.png"
 export default function Home(){
     return (
         <div id="cont" className="max-w-full overflow-x-hidden mx-auto">
