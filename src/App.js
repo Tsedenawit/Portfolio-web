@@ -28,8 +28,8 @@ const elements = normalizedNames.map((na, index) => {
   return (
     <div className='max-w-full h-auto'>
       <Nav/>
-    {/* <Home/>
-     <About/> */}
+    <Home/>
+     <About/>
      <div>
      <h2 className="text-5xl ml-20 mt-40">My Portfolio</h2>
      <div className="flex justify-between">
