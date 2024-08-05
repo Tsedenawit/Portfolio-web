@@ -52,7 +52,7 @@ export default function Port(props) {
             varius enim in eros.
           </h2>
           <button className="underline-offset-8 underline mt-4 pl-5">
-           <a href="https://github.com/Tsedenawit/Quiz-main">View in Github</a> 
+           <a href={props.links} target="_blank">View in Github</a> 
           </button>
         </div>
        
