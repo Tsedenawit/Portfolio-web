@@ -14,7 +14,7 @@ export default function Home(){
             <button className="text-center bg-violet-600 w-[150px] h-[50px] text-white rounded"> <a href="#contact">Get in touch</a></button>
             </div>
             <div className="mt-10">
-                <img src={myImage} alt="not found" className="w-[600px] mt-[40px]"></img>
+                <img src={myImage} alt="not found" className="lg:w-[600px] mt-[40px] md:hidden text-center"></img>
             </div>
         </div> 
         </div>
