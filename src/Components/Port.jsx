@@ -16,7 +16,7 @@ export default function Port(props) {
     setIsModalOpen(false);
   };
   return (
-    <div className="mb-[50px] ">
+    <div id='port' className="mb-[50px] ">
       <div className="flex justify-between mr-20 ml-20">
         <div className="max-w-[450px] min-h-[500px] rounded-md mt-20 shadow-2xl ">
           <img

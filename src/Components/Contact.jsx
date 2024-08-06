@@ -23,7 +23,7 @@ export default function Contact(){
    }
 
     return(
-        <div className="grid place-items-center mt-20">
+        <div id="contact" className="grid place-items-center mt-20">
             <h2 className="text-center text-5xl">Contact me </h2>
         <div className=" bg-white rounded-xl shadow-lg p-8 text-gray-600 max-w-[600px]  md:w-full">
           <form className="flex flex-col space-y-4">

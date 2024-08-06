@@ -11,7 +11,7 @@ export default function Home(){
             <h4 className="text-xs  block mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
                 eros elementum tristique.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                 tristique.</h4>
-            <button className="text-center bg-violet-600 w-[150px] h-[50px] text-white rounded"> Get in touch</button>
+            <button className="text-center bg-violet-600 w-[150px] h-[50px] text-white rounded"> <a href="#contact">Get in touch</a></button>
             </div>
             <div className="mt-10">
                 <img src={myImage} alt="not found" className="w-[600px] mt-[40px]"></img>
