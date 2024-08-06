@@ -15,7 +15,7 @@ export default function Port(props) {
   };
   return (
     <div id='port' className="mb-[50px] w-full ">
-      <div className="flex justify-between ml-7 w-full">
+      <div className="flex justify-between pl-10 pr-10 w-full">
         <div className="max-w-[430px] min-h-[515px] rounded-md mt-20 shadow-2xl ">
           <img
             src={props.image}

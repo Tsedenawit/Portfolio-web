@@ -32,7 +32,7 @@ const elements = normalizedNames.map((na, index) => {
     <Home/>
      <About/>
      <div>
-     <h2 className="text-5xl ml-20 mt-40">My Portfolio</h2>
+     <h2 className="text-5xl pl-10 mt-40">My Portfolio</h2>
      <div className="flex justify-between">
      {elements}
      </div>
