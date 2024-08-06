@@ -28,7 +28,7 @@ const elements = normalizedNames.map((na, index) => {
 });
   return (
     <div className='max-w-full h-auto'>
-      {/* <Nav/>
+     <Nav/>
     <Home/>
      <About/>
      <div>
@@ -37,14 +37,8 @@ const elements = normalizedNames.map((na, index) => {
      {elements}
      </div>
      </div>
-     <Contact/> */}
-     <Nav/>
-     <Routes>
-     <Route path='/home' element={<Home/>}/>
-     <Route path='/about' element={<About/>}/>
-     <Route path='/port' element={elements}/>
-     <Route path='/contact' element={<Contact/>}/>
-     </Routes>
+     <Contact/> 
+   
     </div>
   );
 }

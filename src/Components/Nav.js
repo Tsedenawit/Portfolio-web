@@ -6,6 +6,13 @@ import Port from "./Port";
 import Contact from "./Contact";
 
 export default function Nav() {
+  const Pages = [
+    {name: "Home" , nav: "#"},
+    {name: "About" , nav: "#about"},
+    {name: "Process" , nav: "#pro"},
+    {name: "Portfolio" , nav: "#port"},
+    {name: "Contact me", nav:"#"}
+ ] 
   return (
     <div className="w-full min-h-[70px] bg-white drop-shadow-md flex justify-center items-center">
       <ul className="flex space-x-10">
