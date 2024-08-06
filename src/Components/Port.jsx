@@ -1,7 +1,5 @@
 import React from 'react';
 import { Button, Modal } from 'antd';
-import images2 from "../Images/Image.png";
-import images1 from "../Images/quiz.png";
 import { useState } from 'react';
 
 export default function Port(props) {
@@ -16,12 +14,12 @@ export default function Port(props) {
     setIsModalOpen(false);
   };
   return (
-    <div id='port' className="mb-[50px] ">
-      <div className="flex justify-between mr-20 ml-20">
-        <div className="max-w-[450px] min-h-[500px] rounded-md mt-20 shadow-2xl ">
+    <div id='port' className="mb-[50px] w-full ">
+      <div className="flex justify-between ml-7 w-full">
+        <div className="max-w-[430px] min-h-[515px] rounded-md mt-20 shadow-2xl ">
           <img
             src={props.image}
-            className="max-w-100 max-h-50 min-h-[50px] rounded-md"
+            className="max-h-50 min-h-[50px] rounded-md"
           ></img>
           <>
             <Button type="link" onClick={showModal}>
