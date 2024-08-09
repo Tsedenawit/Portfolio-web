@@ -8,7 +8,7 @@ export default function Contact() {
     firstname: "",
     lastname: "",
     email: "",
-    phone: "", // 'Phone' changed to 'phone' for consistency
+    phone: "", 
     service: "",
     area: "",
   });
@@ -23,13 +23,12 @@ export default function Contact() {
 
   const validate = () => {
     const newErrors = {};
-
+console.log(26)
     // Regex patterns
     const namePattern = /^[a-zA-Z\s]+$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const phonePattern = /^\d{10}$/; // Assumes a 10-digit phone number
 
-    // Name validation
     if (!data.firstname || !namePattern.test(data.firstname)) {
       newErrors.firstname = "Name must contain only letters and spaces";
     }
@@ -38,31 +37,29 @@ export default function Contact() {
       newErrors.lastname = "Name must contain only letters and spaces";
     }
 
-    // Email validation
     if (!data.email || !emailPattern.test(data.email)) {
       newErrors.email = "Please enter a valid email address";
     }
 
-    // Phone validation
     if (!data.phone || !phonePattern.test(data.phone)) {
       newErrors.phone = "Phone number must be a 10-digit number";
     }
 
     setErrors(newErrors);
 
-    return Object.keys(newErrors).length === 0; // Returns true if no errors
+    return Object.keys(newErrors).length === 0; 
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     if (validate()) {
-      sendEmail(e); // Call sendEmail if validation passes
+      sendEmail(e); 
       console.log("Form data is valid:", data);
     } else {
       console.log("Form data is invalid:", errors);
     }
-  };
+     };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -99,7 +96,7 @@ export default function Contact() {
                 onChange={handle}
                 name="firstname"
                 required
-                pattern="[a-zA-Z\s]+" // Restrict to letters and spaces
+                pattern="[a-zA-Z\s]+" 
                 title="Last Name must contain only letters and spaces"
               />
               {errors.firstname && <p className="text-red-500">{errors.firstname}</p>}
@@ -148,7 +145,7 @@ export default function Contact() {
                 id="phone"
                 onChange={(value) => setData({ ...data, phone: value })}
                 name="phone"
-                required
+                maxlength="10"
               />
               {errors.phone && <p className="text-red-500">{errors.phone}</p>}
             </div>
@@ -187,7 +184,7 @@ export default function Contact() {
           </div>
           <div className="flex justify-center items-center">
             <button
-              onClick={sendEmail} // Changed from onSubmit to onClick
+              onClick={handleSubmit} // Changed from onSubmit to onClick
               type="submit"
               className="w-28 h-12 bg-violet-700 text-white rounded-lg px-6 py-2 text-sm"
             >
