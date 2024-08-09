@@ -99,7 +99,7 @@ console.log(26)
               </label>
               <input
                 type="text"
-                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
+                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-violet-300"
                 value={data.firstname}
                 id="firstname"
                 onChange={handle}
@@ -116,7 +116,7 @@ console.log(26)
               </label>
               <input
                 type="text"
-                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
+                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-violet-300"
                 value={data.lastname}
                 id="lastname"
                 onChange={handle}
@@ -135,7 +135,7 @@ console.log(26)
               </label>
               <input
                 type="email"
-                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
+                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-violet-300"
                 value={data.email}
                 id="email"
                 onChange={handle}
@@ -149,7 +149,7 @@ console.log(26)
                 Phone Number
               </label>
               <PhoneInput
-                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
+                className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-violet-300"
                 value={data.phone}
                 id="phone"
                 onChange={handlePhoneChange}
@@ -168,7 +168,7 @@ console.log(26)
               value={data.service}
               onChange={handle}
               name="service"
-              className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
+              className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-violet-300"
             >
               <option value="">Select</option>
               <option value="Front-end">Front-end Development</option>
@@ -183,7 +183,7 @@ console.log(26)
             <textarea
               placeholder="Type your message..."
               rows="4"
-              className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
+              className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-violet-300"
               value={data.area}
               onChange={handle}
               name="area"
