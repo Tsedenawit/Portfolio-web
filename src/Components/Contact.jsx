@@ -129,7 +129,7 @@ console.log(26)
             </div>
           </div>
           <div className="flex justify-between">
-            <div>
+            <div className="max-w-[450px]">
               <label htmlFor="email" className="text-sm">
                 Email
               </label>
