@@ -52,6 +52,7 @@ export default function Contact() {
                 id="names"
                 onChange={handle}
                 name="firstname"
+                required
               />
             </div>
             <div>
@@ -66,6 +67,7 @@ export default function Contact() {
                 id="names"
                 onChange={handle}
                 name="lastname"
+                required
               />
             </div>
           </div>
@@ -82,6 +84,7 @@ export default function Contact() {
                 id="names"
                 onChange={handle}
                 name="email"
+                required
               />
             </div>
             <div>
@@ -129,6 +132,7 @@ export default function Contact() {
               value={data.area}
               onChange={handle}
               name="area"
+              required
             ></textarea>
           </div>
           <div className="flex justify-center items-center">
