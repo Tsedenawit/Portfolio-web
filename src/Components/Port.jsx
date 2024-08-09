@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal } from 'antd';
 import { useState } from 'react';
-
+import { MdArrowOutward } from "react-icons/md";
 export default function Port(props) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const showModal = () => {
@@ -46,8 +46,9 @@ export default function Port(props) {
             varius enim in eros.
           </h2>
           <button className="underline-offset-8 underline mt-4 pl-5">
-            <a href={props.links} target="_blank">
-              View in Github
+            <a href={props.links} target="_blank"  className="inline-flex items-center">
+              View in Github 
+              <MdArrowOutward />
             </a>
           </button>
         </div>

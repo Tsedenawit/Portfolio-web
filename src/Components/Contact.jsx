@@ -1,6 +1,6 @@
 import React from "react";
-import { useState } from "react";
-
+import { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 export default function Contact() {
   const [data, setData] = useState({
     firstname: "",
@@ -15,14 +15,30 @@ export default function Contact() {
     const { value, name } = event.target;
     setData({ ...data, [name]: value });
   }
+  const form = useRef();
 
-  function submit() {}
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_g4jbn0m', 'template_xrwbdae', form.current, {
+        publicKey: 'nCb8bXLRL1edwYAPV',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
   return (
     <div id="contact" className="grid place-items-center mt-20">
       <h2 className="text-center text-5xl">Contact me </h2>
       <div className=" bg-white rounded-xl shadow-lg p-8 text- max-w-[800px]  md:w-full">
-        <form className="flex flex-col space-y-3">
+        <form ref={form} className="flex flex-col space-y-3">
           <div className="flex justify-between ">
             <div>
               <label for="names" className="text-sm w-24">
@@ -117,6 +133,7 @@ export default function Contact() {
           </div>
           <div className="flex justify-center items-center">
             <button
+              onSubmit={sendEmail}
               type="submit"
               className="w-28 h-12 bg-violet-700 text-white rounded-lg px-6 py-2 text-sm"
             >
