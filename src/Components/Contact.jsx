@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
+import { isValidPhoneNumber } from 'react-phone-number-input';
 
 export default function Contact() {
   const [data, setData] = useState({
@@ -21,13 +22,18 @@ export default function Contact() {
     setData({ ...data, [name]: value });
   };
 
+  const handlePhoneChange = (value) => {
+    setData({ ...data, phone: value });
+  };
+
   const validate = () => {
     const newErrors = {};
 console.log(26)
     // Regex patterns
     const namePattern = /^[a-zA-Z\s]+$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const phonePattern = /^\d{10}$/; // Assumes a 10-digit phone number
+    // const phonePattern = /^\d{10}$/; 
+    // const cleanedPhone = data.phone.replace(/\D/g, '');
 
     if (!data.firstname || !namePattern.test(data.firstname)) {
       newErrors.firstname = "Name must contain only letters and spaces";
@@ -41,8 +47,11 @@ console.log(26)
       newErrors.email = "Please enter a valid email address";
     }
 
-    if (!data.phone || !phonePattern.test(data.phone)) {
+    if (!data.phone || !isValidPhoneNumber(data.phone)) {
       newErrors.phone = "Phone number must be a 10-digit number";
+    }
+    if (!data.area.trim()) {
+      newErrors.area = 'Message cannot be empty';
     }
 
     setErrors(newErrors);
@@ -143,9 +152,8 @@ console.log(26)
                 className="ring-1 ring-violet-500 w-full rounded-md px-4 py-2 mt-2 outline-none focus:ring-2 focus:ring-green-300"
                 value={data.phone}
                 id="phone"
-                onChange={(value) => setData({ ...data, phone: value })}
+                onChange={handlePhoneChange}
                 name="phone"
-                maxlength="10"
               />
               {errors.phone && <p className="text-red-500">{errors.phone}</p>}
             </div>
@@ -180,8 +188,8 @@ console.log(26)
               onChange={handle}
               name="area"
               required
-            ></textarea>
-          </div>
+            > </textarea>
+          {errors.area && <p className="text-red-500">{errors.area}</p>}</div>
           <div className="flex justify-center items-center">
             <button
               onClick={handleSubmit} // Changed from onSubmit to onClick
