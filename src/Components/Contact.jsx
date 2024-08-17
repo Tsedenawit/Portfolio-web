@@ -3,6 +3,9 @@ import emailjs from "@emailjs/browser";
 import "react-phone-number-input/style.css";
 import PhoneInput from "react-phone-number-input";
 import { isValidPhoneNumber } from 'react-phone-number-input';
+import {  Modal } from 'antd';
+
+
 
 export default function Contact() {
   const [data, setData] = useState({
@@ -14,6 +17,17 @@ export default function Contact() {
     area: "",
   });
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+  
   const [errors, setErrors] = useState({});
   const form = useRef();
 
@@ -29,7 +43,6 @@ export default function Contact() {
   const validate = () => {
     const newErrors = {};
 console.log(26)
-    // Regex patterns
     const namePattern = /^[a-zA-Z\s]+$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     // const phonePattern = /^\d{10}$/; 
@@ -65,6 +78,13 @@ console.log(26)
     if (validate()) {
       sendEmail(e); 
       console.log("Form data is valid:", data);
+    <>
+<Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+  <p>Some contents...</p>
+  <p>Some contents...</p>
+  <p>Some contents...</p>
+</Modal>
+</>
     } else {
       console.log("Form data is invalid:", errors);
     }
@@ -80,6 +100,7 @@ console.log(26)
       .then(
         () => {
           console.log("SUCCESS!");
+
         },
         (error) => {
           console.log("FAILED...", error.text);
